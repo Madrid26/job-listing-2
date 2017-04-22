@@ -13,6 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap/alert
-//= require bootstrap/dropdown 
+//= require bootstrap
 //= require_tree .
+
+$('.carousel').carousel({
+  interval: 2000
+})
