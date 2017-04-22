@@ -8,12 +8,17 @@ class JobsController < ApplicationController
     when 'by_upper_bound'
       Job.published.order('wage_upper_bound DESC')
     else
-      Job.published.recent 
+      Job.published.recent
   end
 end
 
   def show
     @job = Job.find(params[:id])
+
+    if @job.is_hidden
+      flash[:warning] = "This Job already archived"
+      redirect_to root_path
+    end
   end
 
   def new
