@@ -258,7 +258,12 @@
 
     .title {
         text-align: center;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
+    }
+
+    .subtitle {
+      text-align: center;
+      margin-bottom: 40px;
     }
 
     .slogan {
@@ -273,7 +278,7 @@
     .lead {
         margin-bottom: 60px;
         text-align: center;
-        color: white;
+        color: #212121;
     }
 }
 
@@ -289,18 +294,20 @@
 }
 
 .section-heading-spacer {
-    float: left;
+
     width: 200px;
     border-top: 3px solid #e7e7e7;
 }
 
 .section-heading {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .lead {
     font-size: 18px;
     font-weight: 400;
+    color: #212121;
 }
 
 //---------Footer---------
@@ -312,21 +319,4 @@ footer {
 footer .footer-below {
     padding: 25px 0;
     background-color: #212121;
-}
-
-
-.carousel {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-}
-.carousel .item {
-
-}
-
-
-.container-fluid .jumbotron{
-  padding-bottom: 110px;
-  margin: 0 -15px 20px;
-  border-radius: 0;
 }
